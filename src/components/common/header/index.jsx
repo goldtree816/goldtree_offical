@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../assets/logo.png";
+import logo from "/goldtree.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,14 +22,17 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex flex-shrink-0 mt-2 items-center space-x-3">
             <Link to="/" className="flex items-center">
               <img
-                className="w-28 h-28 object-contain rounded-full"
+                className="w-16 h-16 object-contain rounded-full"
                 src={logo}
                 alt="Love Nature Logo"
               />
             </Link>
+            <div>
+              <span className="text-md font-bold">GoldTree</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

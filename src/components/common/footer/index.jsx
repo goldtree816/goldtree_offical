@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assets/logo.png";
+import logo from "/goldtree.png";
 
 const Footer = () => {
   const navItems = [
@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img className="w-24 h-24 object-contain" src={logo} alt="logo" />
+              <img className="w-18 h-18 object-contain" src={logo} alt="logo" />
             </Link>
           </div>
 
