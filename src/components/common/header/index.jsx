@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                className="w-28 h-28 object-contain rounded-full shadow-sm"
+                className="w-28 h-28 object-contain rounded-full"
                 src={logo}
                 alt="Love Nature Logo"
               />

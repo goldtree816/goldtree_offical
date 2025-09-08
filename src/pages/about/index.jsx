@@ -26,29 +26,29 @@ const About = () => {
         </video>
 
         {/* Subtle Gradient Overlay for Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-transparent to-emerald-900/60 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-transparent to-emerald-900/50 z-10" />
 
         {/* Content */}
         <div className="relative z-20 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light mb-8 leading-tight tracking-wide">
-            We all love
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal mb-6 leading-tight">
+            When you truly see
             <br />
-            <span className="font-semibold italic text-amber-300">nature</span>
+            <span className="font-semibold italic text-amber-300 drop-shadow-md">
+              nature
+            </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl md:text-3xl mb-12 font-light leading-relaxed max-w-3xl mx-auto">
-            Look deep into nature and you will
-            <br />
-            understand everything better.
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 font-light leading-relaxed max-w-2xl mx-auto opacity-95">
+            You begin to see the world with clearer eyes and a wiser soul
           </p>
 
           <Link
             to="/services"
-            className="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-black font-semibold px-10 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-gray-900 font-medium px-8 py-3 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group"
           >
             Get Started
             <svg
-              className="w-5 h-5 ml-2"
+              className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -73,9 +73,10 @@ const About = () => {
               About GoldTree Company
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
-              GoldTree is a pioneering sustainable technology company that bridges the gap between 
-              cutting-edge innovation and environmental stewardship. Since 2015, we've been 
-              dedicated to creating solutions that benefit both businesses and the planet.
+              GoldTree is a pioneering sustainable technology company that
+              bridges the gap between cutting-edge innovation and environmental
+              stewardship. Since 2015, we've been dedicated to creating
+              solutions that benefit both businesses and the planet.
             </p>
           </div>
 
@@ -156,19 +157,31 @@ const About = () => {
                   <ul className="text-lg text-slate-600 leading-relaxed font-light space-y-4">
                     <li className="flex items-start">
                       <span className="text-amber-500 mr-2">•</span>
-                      <span><strong>Sustainability:</strong> We prioritize eco-friendly practices in all our operations</span>
+                      <span>
+                        <strong>Sustainability:</strong> We prioritize
+                        eco-friendly practices in all our operations
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-amber-500 mr-2">•</span>
-                      <span><strong>Innovation:</strong> Continuously pushing boundaries to deliver cutting-edge solutions</span>
+                      <span>
+                        <strong>Innovation:</strong> Continuously pushing
+                        boundaries to deliver cutting-edge solutions
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-amber-500 mr-2">•</span>
-                      <span><strong>Integrity:</strong> Honest, transparent relationships with clients and partners</span>
+                      <span>
+                        <strong>Integrity:</strong> Honest, transparent
+                        relationships with clients and partners
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-amber-500 mr-2">•</span>
-                      <span><strong>Excellence:</strong> Striving for the highest quality in everything we do</span>
+                      <span>
+                        <strong>Excellence:</strong> Striving for the highest
+                        quality in everything we do
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -183,31 +196,41 @@ const About = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-emerald-700">Sustainable Web Development</h3>
+                <h3 className="text-xl font-semibold text-emerald-700">
+                  Sustainable Web Development
+                </h3>
                 <p className="text-slate-600">
-                  We create high-performance, energy-efficient websites and applications that minimize 
-                  environmental impact while maximizing user experience.
+                  We create high-performance, energy-efficient websites and
+                  applications that minimize environmental impact while
+                  maximizing user experience.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-emerald-700">Green Technology Consulting</h3>
+                <h3 className="text-xl font-semibold text-emerald-700">
+                  Green Technology Consulting
+                </h3>
                 <p className="text-slate-600">
-                  Our experts help businesses implement eco-friendly technology solutions that reduce 
-                  carbon footprint and operational costs.
+                  Our experts help businesses implement eco-friendly technology
+                  solutions that reduce carbon footprint and operational costs.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-emerald-700">Eco-Conscious Branding</h3>
+                <h3 className="text-xl font-semibold text-emerald-700">
+                  Eco-Conscious Branding
+                </h3>
                 <p className="text-slate-600">
-                  We develop authentic brand identities that communicate your commitment to sustainability 
-                  and connect with environmentally conscious consumers.
+                  We develop authentic brand identities that communicate your
+                  commitment to sustainability and connect with environmentally
+                  conscious consumers.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-emerald-700">Renewable Energy Solutions</h3>
+                <h3 className="text-xl font-semibold text-emerald-700">
+                  Renewable Energy Solutions
+                </h3>
                 <p className="text-slate-600">
-                  Our team designs and implements solar, wind, and other renewable energy systems 
-                  tailored to your business needs.
+                  Our team designs and implements solar, wind, and other
+                  renewable energy systems tailored to your business needs.
                 </p>
               </div>
             </div>
@@ -229,8 +252,10 @@ const About = () => {
 
               {/* Quote */}
               <blockquote className="text-2xl sm:text-3xl font-serif font-light text-slate-700 mb-8 leading-relaxed italic">
-                "GoldTree transformed our business with their sustainable web solutions. Not only did 
-                our digital presence improve dramatically, but we also reduced our energy consumption by 40%."
+                "GoldTree transformed our business with their sustainable web
+                solutions. Not only did our digital presence improve
+                dramatically, but we also reduced our energy consumption by
+                40%."
               </blockquote>
 
               {/* Author */}
@@ -262,10 +287,10 @@ const About = () => {
           </h2>
           <p className="text-lg md:text-xl text-slate-700 leading-relaxed mb-12">
             Founded in 2015, GoldTree began as a small startup with a passion
-            for connecting people to nature through technology. What started as a two-person 
-            operation has blossomed into a team of 50+ dedicated professionals who share a 
-            common vision: to prove that business success and environmental responsibility 
-            can grow together.
+            for connecting people to nature through technology. What started as
+            a two-person operation has blossomed into a team of 50+ dedicated
+            professionals who share a common vision: to prove that business
+            success and environmental responsibility can grow together.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -275,7 +300,8 @@ const About = () => {
               </h3>
               <p className="text-slate-600">
                 Company founded with a vision to merge technology and
-                environmental awareness. Our first office was a converted garden shed!
+                environmental awareness. Our first office was a converted garden
+                shed!
               </p>
             </div>
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
@@ -308,11 +334,12 @@ const About = () => {
               Our Team
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
-              The GoldTree team comprises passionate environmentalists, tech experts, and creative 
-              thinkers who believe in building a better future through sustainable innovation.
+              The GoldTree team comprises passionate environmentalists, tech
+              experts, and creative thinkers who believe in building a better
+              future through sustainable innovation.
             </p>
           </div>
-          
+
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden mb-16 border border-white/20 p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -323,11 +350,14 @@ const About = () => {
                 />
               </div>
               <div className="space-y-6">
-                <h3 className="text-3xl font-serif font-bold text-slate-800">Join Our Mission</h3>
+                <h3 className="text-3xl font-serif font-bold text-slate-800">
+                  Join Our Mission
+                </h3>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  We're always looking for talented individuals who share our passion for 
-                  sustainability and technology. If you want to work on meaningful projects 
-                  that make a difference, we'd love to hear from you.
+                  We're always looking for talented individuals who share our
+                  passion for sustainability and technology. If you want to work
+                  on meaningful projects that make a difference, we'd love to
+                  hear from you.
                 </p>
                 <Link
                   to="/careers"
