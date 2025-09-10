@@ -31,10 +31,12 @@ const Services = () => {
       description:
         "Eco-friendly websites that minimize energy consumption while maximizing performance. Our designs use efficient coding practices, optimized media, and green hosting solutions to reduce your digital carbon footprint.",
       features: [
-        "Energy-efficient coding",
-        "Green hosting",
-        "Carbon-neutral operations",
-        "SEO optimized",
+        "Energy-efficient coding practices",
+        "Green hosting solutions",
+        "Optimized media and assets",
+        "SEO-friendly sustainable design",
+        "Fast loading performance",
+        "Mobile-responsive eco-design",
       ],
       price: "From $1,499",
       buttonText: "Start a project",
@@ -43,14 +45,16 @@ const Services = () => {
       color: "amber",
     },
     {
-      title: "Eco-Conscious Branding",
+      title: "App Development",
       description:
-        "Authentic brand identities that communicate your commitment to sustainability. We develop visual systems that resonate with environmentally conscious consumers while maintaining business objectives.",
+        "Sustainable mobile and web applications built with eco-conscious development practices. We create high-performance apps that minimize energy usage while delivering exceptional user experiences across all platforms.",
       features: [
-        "Eco-friendly materials",
-        "Sustainable packaging",
-        "Brand storytelling",
-        "Market positioning",
+        "Cross-platform development",
+        "Energy-efficient coding",
+        "Offline functionality",
+        "Performance optimization",
+        "Green hosting integration",
+        "User-centric design",
       ],
       price: "From $2,199",
       buttonText: "Start a project",
@@ -59,14 +63,16 @@ const Services = () => {
       color: "amber",
     },
     {
-      title: "Green Content Strategy",
+      title: "Plugins Development",
       description:
-        "Content that educates, inspires, and drives action toward sustainability. Our strategies focus on authentic messaging that builds trust and community around your environmental initiatives.",
+        "Custom WordPress and web plugins developed with sustainability in mind. We create lightweight, efficient plugins that enhance functionality while maintaining optimal performance and minimal environmental impact.",
       features: [
-        "Sustainability messaging",
-        "Educational content",
-        "Community building",
-        "Impact reporting",
+        "Custom WordPress plugins",
+        "Lightweight code architecture",
+        "Performance optimization",
+        "Eco-friendly functionality",
+        "SEO-compatible features",
+        "Regular updates & maintenance",
       ],
       price: "From $899",
       buttonText: "Start a project",
@@ -75,7 +81,6 @@ const Services = () => {
       color: "amber",
     },
   ];
-
   const stats = [
     { value: "5000+", label: "Trees Planted", color: "emerald" },
     { value: "120%", label: "Carbon Negative", color: "amber" },
@@ -298,7 +303,7 @@ const Services = () => {
                       {service.price}
                     </div>
                     <button
-                      className={`bg-gradient-to-r from-${service.color}-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-black font-semibold px-6 py-2 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105`} 
+                      className={`bg-gradient-to-r from-${service.color}-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-black font-semibold px-6 py-2 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105`}
                     >
                       {service.buttonText}
                     </button>
@@ -457,7 +462,7 @@ const Services = () => {
                     <img
                       src={TeamCollaboration2}
                       alt="Team collaboration 2"
-                      className="w-full h-48 object-cover rounded-xl shadow-md"
+                      className="w-full h-48 object-cover rounded-xl shadow-md "
                     />
                   </div>
                   <div className="w-1/2">

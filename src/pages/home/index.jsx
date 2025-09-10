@@ -8,21 +8,21 @@ import MountainAbout from "../../assets/mountain-about.jpg"; // Assuming this is
 const Hero = () => {
   const services = [
     {
-      title: "Web Design",
+      title: "Web Development",
       description:
-        "Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.",
+        "We build fast, responsive websites that work perfectly on all devices. Get a professional online presence that helps you attract more customers and grow your business.",
       image: WebDesigner,
     },
     {
-      title: "Graphic Design",
+      title: "App Development",
       description:
-        "Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.",
+        "Create powerful mobile apps that your customers will love. We develop user-friendly applications that solve real problems and make daily tasks easier.",
       image: GraphicDesigner,
     },
     {
-      title: "Content Creation",
+      title: "Plugins Development",
       description:
-        "Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.",
+        "Enhance your website with custom plugins that add exactly the features you need. We create reliable extensions that work seamlessly with your existing platform.",
       image: ContentCreator,
     },
   ];
@@ -51,7 +51,10 @@ const Hero = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-light mb-8 leading-tight tracking-wide">
             Growing businesses,
             <br />
-            <span className="font-semibold italic text-amber-300"> nurturing innovation</span>
+            <span className="font-semibold italic text-amber-300">
+              {" "}
+              nurturing innovation
+            </span>
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-3xl mb-12 font-light leading-relaxed max-w-3xl mx-auto">
@@ -65,8 +68,18 @@ const Hero = () => {
             className="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-black font-semibold px-10 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Get Started
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>
@@ -112,13 +125,18 @@ const Hero = () => {
       <div className="py-20 bg-gradient-to-br from-emerald-50 via-slate-50 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8 inline-block p-4 bg-gradient-to-br from-slate-200 to-emerald-100 rounded-full shadow-md">
-            <svg className="w-12 h-12 text-slate-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg
+              className="w-12 h-12 text-slate-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
               <path d="M9.662 1.21a.537.537 0 01.488 0A.537.537 0 0111 1.978V7.5h1.79L8 14.25 4.21 7.5H6V1.978a.537.537 0 01.85-.767zM2.1 7.151a.537.537 0 01.262-.76L3.774 5.32a.537.537 0 01.498.06.537.537 0 01.187.556V7.5h1.782L2.1 13.85a.537.537 0 11-.964-.514z" />
             </svg>
           </div>
 
           <blockquote className="text-2xl sm:text-3xl font-serif font-light text-slate-700 mb-8 leading-relaxed italic max-w-3xl mx-auto">
-            "Original and with an innate understanding of their customer's needs, the team at Love Nature are always a pleasure to work with."
+            "Original and with an innate understanding of their customer's
+            needs, the team at Love Nature are always a pleasure to work with."
           </blockquote>
 
           <div className="flex items-center justify-center space-x-4">
@@ -128,7 +146,9 @@ const Hero = () => {
               className="w-16 h-16 rounded-full object-cover shadow-lg border-4 border-white"
             />
             <div className="text-left">
-              <div className="font-semibold text-slate-900 text-lg">Sanam Chaudhary</div>
+              <div className="font-semibold text-slate-900 text-lg">
+                Sanam Chaudhary
+              </div>
               <div className="text-slate-600 text-sm">CEO, Tech Company</div>
             </div>
           </div>
@@ -158,8 +178,18 @@ const Hero = () => {
                 className="inline-flex items-center bg-transparent border-2 border-amber-400 text-amber-600 hover:bg-amber-50 font-medium px-6 py-3 rounded-full transition-all duration-300 hover:shadow-md"
               >
                 Find Out More
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </Link>
             </div>
@@ -176,7 +206,10 @@ const Hero = () => {
 
       {/* Call to Action Section */}
       <div className="relative py-32 bg-gradient-to-br from-emerald-800 via-emerald-600 to-amber-600">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${MountainAbout})` }} />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${MountainAbout})` }}
+        />
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-light mb-8">
             QUESTIONS?
@@ -191,8 +224,18 @@ const Hero = () => {
             className="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-black font-semibold px-10 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Let's Chat
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>

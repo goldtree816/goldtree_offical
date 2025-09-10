@@ -207,30 +207,33 @@ const About = () => {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-emerald-700">
-                  Green Technology Consulting
+                  App Development
                 </h3>
                 <p className="text-slate-600">
-                  Our experts help businesses implement eco-friendly technology
-                  solutions that reduce carbon footprint and operational costs.
+                  We create high-performance mobile and web applications with
+                  efficient coding practices that minimize energy consumption
+                  and provide exceptional user experiences.
                 </p>
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-emerald-700">
-                  Eco-Conscious Branding
+                  Plugins Development and Branding
                 </h3>
                 <p className="text-slate-600">
-                  We develop authentic brand identities that communicate your
-                  commitment to sustainability and connect with environmentally
-                  conscious consumers.
+                  We develop custom plugins that enhance functionality while
+                  maintaining sustainability, and create eco-conscious branding
+                  that resonates with environmentally aware audiences.
                 </p>
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-emerald-700">
-                  Renewable Energy Solutions
+                  Future AI Plan
                 </h3>
                 <p className="text-slate-600">
-                  Our team designs and implements solar, wind, and other
-                  renewable energy systems tailored to your business needs.
+                  We're developing AI-powered solutions that leverage machine
+                  learning and predictive analytics to optimize sustainability
+                  efforts, reduce waste, and create smarter, more efficient
+                  systems for tomorrow's environmental challenges.
                 </p>
               </div>
             </div>
