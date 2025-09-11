@@ -4,7 +4,8 @@ import Footer from "../../components/common/footer";
 import AboutBackground from "../../assets/about_background.mp4";
 import MountainAbout from "../../assets/mountain-about.jpg";
 import WebDesigner from "../../assets/web-designer.jpg";
-import TeamMeeting from "../../assets/team-meeting.jpg"; // You'll need to add this image
+import TeamMeeting from "../../assets/team-meeting.jpg"; 
+import AboutImage from "../../assets/about-image.jpg";
 
 const About = () => {
   return (
@@ -20,6 +21,8 @@ const About = () => {
           loop
           muted
           playsInline
+          preload="none"
+          poster={AboutImage}
         >
           <source src={AboutBackground} type="video/mp4" />
           Your browser does not support the video tag.

@@ -8,6 +8,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
+import ContactImage from "../../assets/contact-image.jpg";
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -40,6 +41,8 @@ const ContactPage = () => {
           loop
           muted
           playsInline
+          preload="none"
+          poster={ContactImage}
         >
           <source src={contactVideo} type="video/mp4" />
         </video>

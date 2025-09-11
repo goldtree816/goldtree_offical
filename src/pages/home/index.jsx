@@ -3,7 +3,7 @@ import background_video from "../../assets/background_video.mp4";
 import WebDesigner from "../../assets/web-designer.jpg";
 import GraphicDesigner from "../../assets/graphic-designer.jpg";
 import ContentCreator from "../../assets/content-creator.jpg";
-import MountainAbout from "../../assets/mountain-about.jpg"; // Assuming this is available for CTA section
+import MountainAbout from "../../assets/home-image.jpg";
 
 const Hero = () => {
   const services = [
@@ -38,6 +38,8 @@ const Hero = () => {
           loop
           muted
           playsInline
+          preload="none"
+          poster={"/placeholder.svg"}
         >
           <source src={background_video} type="video/mp4" />
           Your browser does not support the video tag.

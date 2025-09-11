@@ -23,6 +23,7 @@ import {
   Sprout,
   Cloud,
 } from "lucide-react";
+import ServiceImage from "../../assets/service-image.jpg"
 
 const Services = () => {
   const services = [
@@ -160,6 +161,8 @@ const Services = () => {
           loop
           muted
           playsInline
+          preload="none"
+          poster={ServiceImage}
         >
           <source src={servicesVideo} type="video/mp4" />
           Your browser does not support the video tag.
