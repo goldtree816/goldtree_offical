@@ -1,14 +1,13 @@
 import { useState } from "react";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
-import contactVideo from "../../assets/contact-background.mp4";
 import { MapPin, Phone, Mail, Clock, Search, Cloud, Send } from "lucide-react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
-import ContactImage from "../../assets/contact-image.jpg";
+import ContactBackground from "../../assets/contact-background.jpg";
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -34,19 +33,14 @@ const ContactPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="none"
-          poster={ContactImage}
-        >
-          <source src={contactVideo} type="video/mp4" />
-        </video>
-
+      <div
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${ContactBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-emerald-900/60 z-10" />
 
         <div className="relative z-20 text-center text-white px-6 sm:px-10 lg:px-16 max-w-4xl mx-auto">

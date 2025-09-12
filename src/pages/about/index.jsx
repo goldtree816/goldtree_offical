@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
-import AboutBackground from "../../assets/about_background.mp4";
 import MountainAbout from "../../assets/mountain-about.jpg";
 import WebDesigner from "../../assets/web-designer.jpg";
-import TeamMeeting from "../../assets/team-meeting.jpg"; 
-import AboutImage from "../../assets/about-image.jpg";
+import TeamMeeting from "../../assets/team-meeting.jpg";
+import AboutBackground from "../../assets/about-background.jpg";
 
 const About = () => {
   return (
@@ -13,21 +12,14 @@ const About = () => {
       <Header />
 
       {/* Hero Section with Video Background */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Video */}
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="none"
-          poster={AboutImage}
-        >
-          <source src={AboutBackground} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
+      <div
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${AboutBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         {/* Subtle Gradient Overlay for Readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-transparent to-emerald-900/50 z-10" />
 

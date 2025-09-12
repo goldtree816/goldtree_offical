@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import background_video from "../../assets/background_video.mp4";
 import WebDesigner from "../../assets/web-designer.jpg";
 import GraphicDesigner from "../../assets/graphic-designer.jpg";
 import ContentCreator from "../../assets/content-creator.jpg";
-import MountainAbout from "../../assets/home-image.jpg";
+import MountainAbout from "../../assets/home-background.jpg";
+import HomeBackground from "../../assets/home-background.jpg";
+
 
 const Hero = () => {
   const services = [
@@ -30,21 +31,14 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section with Video Background */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Video */}
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="none"
-          poster={"/placeholder.svg"}
-        >
-          <source src={background_video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
+      <div
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${HomeBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-transparent to-emerald-900/60 z-10" />
 
@@ -209,7 +203,7 @@ const Hero = () => {
       {/* Call to Action Section */}
       <div className="relative py-32 bg-gradient-to-br from-emerald-800 via-emerald-600 to-amber-600">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${MountainAbout})` }}
         />
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">

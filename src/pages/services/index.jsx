@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
-import servicesVideo from "../../assets/services-background.mp4";
 import WebDesigner from "../../assets/web-designer.jpg";
 import GraphicDesigner from "../../assets/graphic-designer.jpg";
 import ContentCreator from "../../assets/content-creator.jpg";
@@ -23,7 +22,7 @@ import {
   Sprout,
   Cloud,
 } from "lucide-react";
-import ServiceImage from "../../assets/service-image.jpg"
+import ServiceBackground from "../../assets/service-background.jpg";
 
 const Services = () => {
   const services = [
@@ -154,21 +153,15 @@ const Services = () => {
       <Header />
 
       {/* Hero Section with Video Background */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="none"
-          poster={ServiceImage}
-        >
-          <source src={servicesVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/50 to-emerald-900/70 z-10" />
+      <div
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${ServiceBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-800/70 via-transparent to-emerald-900/80 z-10" />
 
         <div className="relative z-20 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="mb-4">
